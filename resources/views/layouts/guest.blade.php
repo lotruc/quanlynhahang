@@ -14,11 +14,11 @@
 
     <!-- CSS Files -->
     <link rel="stylesheet" href="{{asset('assets/css/animate-3.7.0.css')}}">
-    <link rel="stylesheet" href="{{('assets/css/font-awesome-4.7.0.min.css')}}">
-    <link rel="stylesheet" href="{{('assets/css/bootstrap-4.1.3.min.css')}}">
-    <link rel="stylesheet" href="{{('assets/css/owl-carousel.min.css')}}">
-    <link rel="stylesheet" href="{{('assets/css/jquery.datetimepicker.min.css')}}">
-    <link rel="stylesheet" href="{{('assets/css/style.css')}}">
+    <link rel="stylesheet" href="{{asset('assets/css/font-awesome-4.7.0.min.css')}}">
+    <link rel="stylesheet" href="{{asset('assets/css/bootstrap-4.1.3.min.css')}}">
+    <link rel="stylesheet" href="{{asset('assets/css/owl-carousel.min.css')}}">
+    <link rel="stylesheet" href="{{asset('assets/css/jquery.datetimepicker.min.css')}}">
+    <link rel="stylesheet" href="{{asset('assets/css/style.css')}}">
     
 </head>
 <body>
@@ -45,17 +45,20 @@
                     </div>  
                     <div class="main-menu">
                         <ul>
-                            <li class="active"><a href="index.html">home</a></li>
-                            <li><a href="about.html">about</a></li>
-                            <li><a href="menu.html">menu</a></li>
-                            <li><a href="#">blog</a>
+                            <li class="active"><a href="index.html">Trang chủ</a></li>
+                            <li><a href="about.html">Về chúng tôi</a></li>
+                            <li><a href="menu.html">Thực đơn</a></li>
+                            <li><a href="#">Bài viết</a>
                                 <ul class="sub-menu">
                                     <li><a href="blog-home.html">Blog Home</a></li>
                                     <li><a href="blog-details.html">Blog Details</a></li>
                                 </ul>
                             </li>
-                            <li><a href="contact-us.html">contact</a></li>
-                            <li><a href="elements.html">Elements</a></li>
+                            <li><a href="{{route('login')}}">Đăng nhập</a></li>
+                            @if (Route::has('register'))
+								   <li> <a href="{{ route('register') }}" class="ml-4 text-sm text-gray-700  underline">Đăng ký</a></li>
+								@endif
+                            
                         </ul>
                     </div>
                 </div>
