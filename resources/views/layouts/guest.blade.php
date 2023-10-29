@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <!-- Required Meta Tags -->
     <meta charset="UTF-8">
@@ -10,17 +11,18 @@
     <title>Foodfun</title>
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="assets/images/logo/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="{{ asset('assets/images/logo/favicon.png')}}" type="image/x-icon">
 
     <!-- CSS Files -->
-    <link rel="stylesheet" href="{{asset('assets/css/animate-3.7.0.css')}}">
-    <link rel="stylesheet" href="{{asset('assets/css/font-awesome-4.7.0.min.css')}}">
-    <link rel="stylesheet" href="{{asset('assets/css/bootstrap-4.1.3.min.css')}}">
-    <link rel="stylesheet" href="{{asset('assets/css/owl-carousel.min.css')}}">
-    <link rel="stylesheet" href="{{asset('assets/css/jquery.datetimepicker.min.css')}}">
-    <link rel="stylesheet" href="{{asset('assets/css/style.css')}}">
-    
+    <link rel="stylesheet" href="{{ asset('assets/css/animate-3.7.0.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/font-awesome-4.7.0.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/bootstrap-4.1.3.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/owl-carousel.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/jquery.datetimepicker.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
+
 </head>
+
 <body>
     <!-- Preloader Starts -->
     <div class="preloader">
@@ -29,12 +31,12 @@
     <!-- Preloader End -->
 
     <!-- Header Area Starts -->
-	<header class="header-area">
+    <header class="header-area">
         <div class="container">
             <div class="row">
                 <div class="col-lg-2">
                     <div class="logo-area">
-                        <a href="index.html"><img src="{{asset('assets/images/logo/logo.png')}}" alt="logo"></a>
+                        <a href="index.html"><img src="{{ asset('assets/images/logo/logo.png') }}" alt="logo"></a>
                     </div>
                 </div>
                 <div class="col-lg-10">
@@ -42,7 +44,7 @@
                         <span></span>
                         <span></span>
                         <span></span>
-                    </div>  
+                    </div>
                     <div class="main-menu">
                         <ul>
                             <li class="active"><a href="index.html">Trang chủ</a></li>
@@ -54,11 +56,30 @@
                                     <li><a href="blog-details.html">Blog Details</a></li>
                                 </ul>
                             </li>
-                            <li><a href="{{route('login')}}">Đăng nhập</a></li>
-                            @if (Route::has('register'))
-								   <li> <a href="{{ route('register') }}" class="ml-4 text-sm text-gray-700  underline">Đăng ký</a></li>
-								@endif
-                            
+                            @auth
+                                <li>
+                                    <a href="">{{ Auth::user()->name }}</a>
+                                </li>
+                                <li>
+                                    <a href="">
+                                        <form action="{{ route('logout') }}" method="POST">
+                                            @csrf
+                                            <button type="submit" class="btn"><i class="fa fa-sign-out"
+                                                    aria-hidden="true"></i>
+                                            </button>
+                                        </form>
+                                    </a>
+
+                                </li>
+                            @else
+                                <li><a href="{{ route('login') }}">Đăng nhập</a></li>
+                                @if (Route::has('register'))
+                                    <li> <a href="{{ route('register') }}"
+                                            class="ml-4 text-sm text-gray-700  underline">Đăng ký</a></li>
+                                @endif
+
+                            @endauth
+
                         </ul>
                     </div>
                 </div>
@@ -66,23 +87,24 @@
         </div>
     </header>
     <!-- Header Area End -->
-    
+
     <!-- Banner Area Starts -->
     <section class="banner-area text-center">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
                     <h6>the most interesting food in the world</h6>
-                    <h1>Discover the <span class="prime-color">flavors</span><br>  
-                    <span class="style-change">of <span class="prime-color">food</span>fun</span></h1>
+                    <h1>Discover the <span class="prime-color">flavors</span><br>
+                        <span class="style-change">of <span class="prime-color">food</span>fun</span>
+                    </h1>
                 </div>
             </div>
         </div>
     </section>
     <!-- Banner Area End -->
-    {{$slot}}
+    {{ $slot }}
 
-    
+
 
 
     <!-- Footer Area Starts -->
@@ -93,7 +115,9 @@
                     <div class="col-md-4">
                         <div class="single-widget single-widget1">
                             <a href="index.html"><img src="assets/images/logo/logo2.png" alt=""></a>
-                            <p class="mt-3">Which morning fourth great won't is to fly bearing man. Called unto shall seed, deep, herb set seed land divide after over first creeping. First creature set upon stars deep male gathered said she'd an image spirit our</p>
+                            <p class="mt-3">Which morning fourth great won't is to fly bearing man. Called unto shall
+                                seed, deep, herb set seed land divide after over first creeping. First creature set upon
+                                stars deep male gathered said she'd an image spirit our</p>
                         </div>
                     </div>
                     <div class="col-md-4">
@@ -142,8 +166,14 @@
                 <div class="row">
                     <div class="col-lg-7 col-md-6">
                         <span><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
-Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
-<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></span>
+                            Copyright &copy;
+                            <script>
+                                document.write(new Date().getFullYear());
+                            </script> All rights reserved | This template is made with <i
+                                class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com"
+                                target="_blank">Colorlib</a>
+                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                        </span>
                     </div>
                     <div class="col-lg-5 col-md-6">
                         <div class="social-icons">
@@ -165,12 +195,13 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
 
 
     <!-- Javascript -->
-    <script src="assets/js/vendor/jquery-2.2.4.min.js"></script>
-	<script src="assets/js/vendor/bootstrap-4.1.3.min.js"></script>
-    <script src="assets/js/vendor/wow.min.js"></script>
-    <script src="assets/js/vendor/owl-carousel.min.js"></script>
-    <script src="assets/js/vendor/jquery.datetimepicker.full.min.js"></script>
-    <script src="assets/js/vendor/jquery.nice-select.min.js"></script>
-    <script src="assets/js/main.js"></script>
+    <script src="{{ asset('assets/js/vendor/jquery-2.2.4.min.js') }}"></script>
+    <script src="{{ asset('assets/js/vendor/bootstrap-4.1.3.min.js') }}"></script>
+    <script src="{{ asset('assets/js/vendor/wow.min.js') }}"></script>
+    <script src="{{ asset('assets/js/vendor/owl-carousel.min.js') }}"></script>
+    <script src="{{ asset('assets/js/vendor/jquery.datetimepicker.full.min.js') }}"></script>
+    <script src="{{ asset('assets/js/vendor/jquery.nice-select.min.js') }}"></script>
+    <script src="{{ asset('assets/js/main.js') }}"></script>
 </body>
+
 </html>
