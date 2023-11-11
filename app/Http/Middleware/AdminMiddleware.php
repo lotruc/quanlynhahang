@@ -26,7 +26,7 @@ class AdminMiddleware
             // Nếu không phải admin, bạn có thể xử lý theo ý muốn của bạn, ví dụ chuyển hướng hoặc ném ngoại lệ
             // Ví dụ: return redirect()->route('home');
             // Hoặc throw new \Exception('Không có quyền truy cập');
-            return redirect()->route('home')->with('error', 'Bạn không có quyền truy cập vào trang này.');
+            return redirect()->route('home.index')->with('error', 'Bạn không có quyền truy cập vào trang này.');
         }
 
         // Nếu người dùng có vai trò admin, cho phép truy cập vào tuyến đường
