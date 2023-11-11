@@ -48,7 +48,7 @@ class CategoryController extends Controller
     /**
      * Hiển thị form sửa danh mục.
      */
-    public function edit(string $id)
+    public function edit($id)
     {
         $category = Category::findOrFail($id);
 
@@ -58,7 +58,7 @@ class CategoryController extends Controller
     /**
      * cập nhật danh mục.
      */
-    public function update(Request $request, string $id)
+    public function update(Request $request, $id)
     {
         $request->validate([
             'name' => 'required',
@@ -77,7 +77,7 @@ class CategoryController extends Controller
     /**
      * Xóa danh mục.
      */
-    public function destroy(string $id)
+    public function destroy($id)
     {
         $category = Category::findOrFail($id);
         $category->delete();
