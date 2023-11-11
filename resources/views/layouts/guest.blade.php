@@ -47,13 +47,13 @@
                     </div>
                     <div class="main-menu">
                         <ul>
-                            <li class="active"><a href="index.html">Trang chủ</a></li>
-                            <li><a href="about.html">Về chúng tôi</a></li>
+                            <li class="active"><a href="{{route('home')}}">Trang chủ</a></li>
+                            <li><a href="{{route('home')}}">Về chúng tôi</a></li>
                             <li><a href="menu.html">Thực đơn</a></li>
                             <li><a href="#">Bài viết</a>
                                 <ul class="sub-menu">
-                                    <li><a href="blog-home.html">Blog Home</a></li>
-                                    <li><a href="blog-details.html">Blog Details</a></li>
+                                    <li><a href="blog-home.html">Bài viết</a></li>
+                                    <li><a href="blog-details.html">Bài viết chi tiet</a></li>
                                 </ul>
                             </li>
                             @auth

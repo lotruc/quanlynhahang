@@ -1,19 +1,22 @@
 <x-guest-layout>
-
     <!-- Welcome Area Starts -->
     <section class="welcome-area section-padding2">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-6 align-self-center">
                     <div class="welcome-img">
-                        <img src="assets/images/welcome-bg.png" class="img-fluid" alt="">
+                        <img src="{{ asset('assets/images/welcome-bg.png') }}" class="img-fluid" alt="">
                     </div>
                 </div>
                 <div class="col-md-6 align-self-center">
                     <div class="welcome-text mt-5 mt-md-0">
                         <h3><span class="style-change">welcome</span> <br>to food fun</h3>
-                        <p class="pt-3">Created god gathered don't you yielding herb you had. And isn't, god was saw. Dominion. Great sixth for in unto was. Open can't tree am waters brought. Divide after there. Was.</p>
-                        <p>Created god gathered don't you yielding herb you had. And isn't, god was saw. Dominion. Great sixth for in unto was. Open can't tree waters brought. Divide after there. Was. Created god gathered don't you yielding herb you had. And isn't god.</p>
+                        <p class="pt-3">Created god gathered don't you yielding herb you had. And isn't, god was saw.
+                            Dominion. Great sixth for in unto was. Open can't tree am waters brought. Divide after
+                            there. Was.</p>
+                        <p>Created god gathered don't you yielding herb you had. And isn't, god was saw. Dominion. Great
+                            sixth for in unto was. Open can't tree waters brought. Divide after there. Was. Created god
+                            gathered don't you yielding herb you had. And isn't god.</p>
                         <a href="#" class="template-btn mt-3">book a table</a>
                     </div>
                 </div>
@@ -29,7 +32,9 @@
                 <div class="col-md-5">
                     <div class="section-top">
                         <h3><span class="style-change">we serve</span> <br>delicious food</h3>
-                        <p class="pt-3">They're fill divide i their yielding our after have him fish on there for greater man moveth, moved Won't together isn't for fly divide mids fish firmament on net.</p>
+                        <p class="pt-3">They're fill divide i their yielding our after have him fish on there for
+                            greater man moveth, moved Won't together isn't for fly divide mids fish firmament on net.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -37,7 +42,7 @@
                 <div class="col-md-4 col-sm-6">
                     <div class="single-food">
                         <div class="food-img">
-                            <img src="assets/images/food1.jpg" class="img-fluid" alt="">
+                            <img src="{{ asset('assets/images/food1.jpg') }}" class="img-fluid" alt="">
                         </div>
                         <div class="food-content">
                             <div class="d-flex justify-content-between">
@@ -51,7 +56,7 @@
                 <div class="col-md-4 col-sm-6">
                     <div class="single-food mt-5 mt-sm-0">
                         <div class="food-img">
-                            <img src="assets/images/food2.jpg" class="img-fluid" alt="">
+                            <img src="{{ asset('assets/images/food2.jpg') }}" class="img-fluid" alt="">
                         </div>
                         <div class="food-content">
                             <div class="d-flex justify-content-between">
@@ -65,7 +70,7 @@
                 <div class="col-md-4 col-sm-6">
                     <div class="single-food mt-5 mt-md-0">
                         <div class="food-img">
-                            <img src="assets/images/food3.jpg" class="img-fluid" alt="">
+                            <img src="{{ asset('assets/images/food3.jpg') }}" class="img-fluid" alt="">
                         </div>
                         <div class="food-content">
                             <div class="d-flex justify-content-between">
@@ -79,7 +84,7 @@
                 <div class="col-md-4 col-sm-6">
                     <div class="single-food mt-5">
                         <div class="food-img">
-                            <img src="assets/images/food4.jpg" class="img-fluid" alt="">
+                            <img src="{{ asset('assets/images/food4.jpg') }}" class="img-fluid" alt="">
                         </div>
                         <div class="food-content">
                             <div class="d-flex justify-content-between">
@@ -93,7 +98,7 @@
                 <div class="col-md-4 col-sm-6">
                     <div class="single-food mt-5">
                         <div class="food-img">
-                            <img src="assets/images/food5.jpg" class="img-fluid" alt="">
+                            <img src="{{ asset('assets/images/food5.jpg') }}" class="img-fluid" alt="">
                         </div>
                         <div class="food-content">
                             <div class="d-flex justify-content-between">
@@ -107,7 +112,7 @@
                 <div class="col-md-4 col-sm-6">
                     <div class="single-food mt-5">
                         <div class="food-img">
-                            <img src="assets/images/food6.jpg" class="img-fluid" alt="">
+                            <img src="{{ asset('assets/images/food6.jpg') }}" class="img-fluid" alt="">
                         </div>
                         <div class="food-content">
                             <div class="d-flex justify-content-between">
@@ -136,7 +141,7 @@
         </div>
     </div>
     <!-- Reservation Area End -->
-    
+
     <!-- Deshes Area Starts -->
     <div class="deshes-area section-padding">
         <div class="container">
@@ -153,26 +158,32 @@
                     <h1>01.</h1>
                     <div class="deshes-text">
                         <h3><span>Garlic</span><br> green beans</h3>
-                        <p class="pt-3">Be. Seed saying our signs beginning face give spirit own beast darkness morning moveth green multiply she'd kind saying one shall, two which darkness have day image god their night. his subdue so you rule can.</p>
+                        <p class="pt-3">Be. Seed saying our signs beginning face give spirit own beast darkness
+                            morning moveth green multiply she'd kind saying one shall, two which darkness have day image
+                            god their night. his subdue so you rule can.</p>
                         <span class="style-change">$12.00</span>
-                        <a href="#" class="template-btn3 mt-3">book a table <span><i class="fa fa-long-arrow-right"></i></span></a>
+                        <a href="#" class="template-btn3 mt-3">book a table <span><i
+                                    class="fa fa-long-arrow-right"></i></span></a>
                     </div>
                 </div>
                 <div class="col-lg-5 offset-lg-2 col-md-6 align-self-center mt-4 mt-md-0">
-                    <img src="assets/images/deshes1.png" alt="" class="img-fluid">
+                    <img src="{{ asset('assets/images/deshes1.png') }}" alt="" class="img-fluid">
                 </div>
             </div>
             <div class="row mt-5">
                 <div class="col-lg-5 col-md-6 align-self-center order-2 order-md-1 mt-4 mt-md-0">
-                    <img src="assets/images/deshes2.png" alt="" class="img-fluid">
+                    <img src="{{ asset('assets/images/deshes2.png') }}" alt="" class="img-fluid">
                 </div>
                 <div class="col-lg-5 offset-lg-2 col-md-6 align-self-center order-1 order-md-2">
                     <h1>02.</h1>
                     <div class="deshes-text">
                         <h3><span>Lemon</span><br> rosemary chicken</h3>
-                        <p class="pt-3">Be. Seed saying our signs beginning face give spirit own beast darkness morning moveth green multiply she'd kind saying one shall, two which darkness have day image god their night. his subdue so you rule can.</p>
+                        <p class="pt-3">Be. Seed saying our signs beginning face give spirit own beast darkness
+                            morning moveth green multiply she'd kind saying one shall, two which darkness have day image
+                            god their night. his subdue so you rule can.</p>
                         <span class="style-change">$12.00</span>
-                        <a href="#" class="template-btn3 mt-3">book a table <span><i class="fa fa-long-arrow-right"></i></span></a>
+                        <a href="#" class="template-btn3 mt-3">book a table <span><i
+                                    class="fa fa-long-arrow-right"></i></span></a>
                     </div>
                 </div>
             </div>
@@ -196,32 +207,35 @@
                     <div class="testimonial-slider owl-carousel">
                         <div class="single-slide d-sm-flex">
                             <div class="customer-img mr-4 mb-4 mb-sm-0">
-                                <img src="assets/images/customer1.png" alt="">
+                                <img src="{{ asset('assets/images/customer1.png') }}" alt="">
                             </div>
                             <div class="customer-text">
                                 <h5>adame nesane</h5>
                                 <span><i>Chief Customer</i></span>
-                                <p class="pt-3">You're had. Subdue grass Meat us winged years you'll doesn't. fruit two also won one yielding creepeth third give may never lie alternet food.</p>
+                                <p class="pt-3">You're had. Subdue grass Meat us winged years you'll doesn't. fruit
+                                    two also won one yielding creepeth third give may never lie alternet food.</p>
                             </div>
                         </div>
                         <div class="single-slide d-sm-flex">
                             <div class="customer-img mr-4 mb-4 mb-sm-0">
-                                <img src="assets/images/customer2.png" alt="">
+                                <img src="{{ asset('assets/images/customer2.png') }}" alt="">
                             </div>
                             <div class="customer-text">
                                 <h5>adam nahan</h5>
                                 <span><i>Chief Customer</i></span>
-                                <p class="pt-3">You're had. Subdue grass Meat us winged years you'll doesn't. fruit two also won one yielding creepeth third give may never lie alternet food.</p>
+                                <p class="pt-3">You're had. Subdue grass Meat us winged years you'll doesn't. fruit
+                                    two also won one yielding creepeth third give may never lie alternet food.</p>
                             </div>
                         </div>
                         <div class="single-slide d-sm-flex">
                             <div class="customer-img mr-4 mb-4 mb-sm-0">
-                                <img src="assets/images/customer1.png" alt="">
+                                <img src="{{ asset('assets/images/customer1.png') }}" alt="">
                             </div>
                             <div class="customer-text">
                                 <h5>adame nesane</h5>
                                 <span><i>Chief Customer</i></span>
-                                <p class="pt-3">You're had. Subdue grass Meat us winged years you'll doesn't. fruit two also won one yielding creepeth third give may never lie alternet food.</p>
+                                <p class="pt-3">You're had. Subdue grass Meat us winged years you'll doesn't. fruit
+                                    two also won one yielding creepeth third give may never lie alternet food.</p>
                             </div>
                         </div>
                     </div>
@@ -246,7 +260,7 @@
                 <div class="col-md-4">
                     <div class="single-food">
                         <div class="food-img">
-                            <img src="assets/images/update1.jpg" class="img-fluid" alt="">
+                            <img src="{{ asset('assets/images/update1.jpg') }}" class="img-fluid" alt="">
                         </div>
                         <div class="food-content">
                             <div class="post-admin d-lg-flex mb-3">
@@ -255,14 +269,15 @@
                             </div>
                             <h5>no finer food can be found</h5>
                             <p>nancy boy off his nut so I said chimney pot be James Bond aking cakes he.</p>
-                            <a href="#" class="template-btn3 mt-2">read more <span><i class="fa fa-long-arrow-right"></i></span></a>
+                            <a href="#" class="template-btn3 mt-2">read more <span><i
+                                        class="fa fa-long-arrow-right"></i></span></a>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="single-food my-5 my-md-0">
                         <div class="food-img">
-                            <img src="assets/images/update2.jpg" class="img-fluid" alt="">
+                            <img src="{{ asset('assets/images/update2.jpg') }}" class="img-fluid" alt="">
                         </div>
                         <div class="food-content">
                             <div class="post-admin d-lg-flex mb-3">
@@ -271,14 +286,15 @@
                             </div>
                             <h5>things go better with food</h5>
                             <p>nancy boy off his nut so I said chimney pot be James Bond aking cakes he.</p>
-                            <a href="#" class="template-btn3 mt-2">read more <span><i class="fa fa-long-arrow-right"></i></span></a>
+                            <a href="#" class="template-btn3 mt-2">read more <span><i
+                                        class="fa fa-long-arrow-right"></i></span></a>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="single-food">
                         <div class="food-img">
-                            <img src="assets/images/update3.jpg" class="img-fluid" alt="">
+                            <img src="{{ asset('assets/images/update3.jpg') }}" class="img-fluid" alt="">
                         </div>
                         <div class="food-content">
                             <div class="post-admin d-lg-flex mb-3">
@@ -287,7 +303,8 @@
                             </div>
                             <h5>food head above the rest</h5>
                             <p>nancy boy off his nut so I said chimney pot be James Bond aking cakes he.</p>
-                            <a href="#" class="template-btn3 mt-2">read more <span><i class="fa fa-long-arrow-right"></i></span></a>
+                            <a href="#" class="template-btn3 mt-2">read more <span><i
+                                        class="fa fa-long-arrow-right"></i></span></a>
                         </div>
                     </div>
                 </div>
@@ -312,19 +329,19 @@
                     <form action="#">
                         <div class="input-group mb-3">
                             <div class="input-group-prepend">
-                              <span class="input-group-text"><i class="fa fa-calendar"></i></span>
+                                <span class="input-group-text"><i class="fa fa-calendar"></i></span>
                             </div>
                             <input type="text" id="datepicker">
                         </div>
                         <div class="input-group mb-3">
                             <div class="input-group-prepend">
-                              <span class="input-group-text"><i class="fa fa-clock-o"></i></span>
+                                <span class="input-group-text"><i class="fa fa-clock-o"></i></span>
                             </div>
                             <input type="text" id="datepicker2">
                         </div>
                         <div class="input-group mb-3">
                             <div class="input-group-prepend">
-                              <span class="input-group-text"><i class="fa fa-user-o"></i></span>
+                                <span class="input-group-text"><i class="fa fa-user-o"></i></span>
                             </div>
                             <input type="text">
                         </div>
