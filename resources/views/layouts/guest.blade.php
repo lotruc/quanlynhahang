@@ -11,7 +11,7 @@
     <title>Foodfun</title>
 
     <!-- Favicon -->
-    <link rel="shortcut icon" href="{{ asset('assets/images/logo/favicon.png')}}" type="image/x-icon">
+    <link rel="shortcut icon" href="{{ asset('assets/images/logo/favicon.png') }}" type="image/x-icon">
 
     <!-- CSS Files -->
     <link rel="stylesheet" href="{{ asset('assets/css/animate-3.7.0.css') }}">
@@ -47,13 +47,14 @@
                     </div>
                     <div class="main-menu">
                         <ul>
-                            <li class="active"><a href="{{route('home')}}">Trang chủ</a></li>
-                            <li><a href="{{route('home')}}">Về chúng tôi</a></li>
-                            <li><a href="menu.html">Thực đơn</a></li>
+                            <li class="active"><a href="{{ route('home') }}">Trang chủ</a></li>
+                            <li><a href="{{ route('about') }}">Về chúng tôi</a></li>
+                            <li><a href="{{ route('website.menu.index') }}">Thực đơn</a></li>
+                            <li><a href="{{ route('website.contact.index') }}">Liên hệ</a></li>
                             <li><a href="#">Bài viết</a>
                                 <ul class="sub-menu">
                                     <li><a href="blog-home.html">Bài viết</a></li>
-                                    <li><a href="blog-details.html">Bài viết chi tiet</a></li>
+                                    <li><a href="blog-details.html">Bài viết chi tiết</a></li>
                                 </ul>
                             </li>
                             @auth
@@ -93,9 +94,9 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <h6>the most interesting food in the world</h6>
-                    <h1>Discover the <span class="prime-color">flavors</span><br>
-                        <span class="style-change">of <span class="prime-color">food</span>fun</span>
+                    <h6>món ăn thú vị nhất thế giới</h6>
+                    <h1>khám phá <span class="prime-color">hương vị</span><br>
+                        <span class="style-change">của <span class="prime-color">đồ ăn</span>vui vẻ</span>
                     </h1>
                 </div>
             </div>
@@ -115,14 +116,15 @@
                     <div class="col-md-4">
                         <div class="single-widget single-widget1">
                             <a href="index.html"><img src="assets/images/logo/logo2.png" alt=""></a>
-                            <p class="mt-3">Which morning fourth great won't is to fly bearing man. Called unto shall
-                                seed, deep, herb set seed land divide after over first creeping. First creature set upon
-                                stars deep male gathered said she'd an image spirit our</p>
+                            <p class="mt-3">Mà buổi sáng thứ tư tuyệt vời sẽ không là con người bay mang. Được kêu gọi
+                                sẽ hạt giống, sâu, đất đặt hạt giống phân chia sau lần leo đầu tiên. Sinh vật đầu tiên
+                                xuất
+                                hiện sao sâu nam tụ tập nói cô ấy muốn một hình ảnh tinh thần của chúng tôi</p>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="single-widget single-widget2 my-5 my-md-0">
-                            <h5 class="mb-4">contact us</h5>
+                            <h5 class="mb-4">Liên hệ với chúng tôi</h5>
                             <div class="d-flex">
                                 <div class="into-icon">
                                     <i class="fa fa-map-marker"></i>

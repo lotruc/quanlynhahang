@@ -9,6 +9,11 @@ class HomeController extends Controller
 {
     public function index()
     {
-        return view('welcome');
+        return view('website.welcome');
+    }
+
+    public function about()
+    {
+        return view('website.about');
     }
 }
